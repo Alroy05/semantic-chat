@@ -45,7 +45,7 @@ export default function Home() {
       {
         result && <p>{result}</p>
       }
-      <button onClick={createIndexAndEmbeddings}>Create index and embeddings</button>
+      <button className='bg-blue-400 rounded-xl px-4 py-2' onClick={createIndexAndEmbeddings}>Create index and embeddings</button>
 
       
     </main>
