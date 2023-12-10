@@ -46,6 +46,8 @@ export default function Home() {
         result && <p>{result}</p>
       }
       <button onClick={createIndexAndEmbeddings}>Create index and embeddings</button>
+
+      
     </main>
   )
 }
