@@ -40,7 +40,7 @@ export const queryPineconeVectorStoreAndQueryLLM = async (
 
     // 7. Create an OpenAI instance and load the QAStuffChain
     const llm = new OpenAI({});
-    const chain = loadQAStuffChain(llm);
+    const chain = loadQAStuffChain(llm); //here as well
 
     // 8. Extract and concatenate page content from matched documents
     const concatenatedPageContent = queryResponse.matches
@@ -66,6 +66,8 @@ export const queryPineconeVectorStoreAndQueryLLM = async (
   }
 };
 
+
+// ------------------Create PineconeIndex-----------------------------
 export const createPineconeIndex = async (
   client,
   indexName,
